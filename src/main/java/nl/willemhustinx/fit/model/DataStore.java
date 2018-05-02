@@ -28,9 +28,9 @@ public class DataStore {
 
         WorkoutExercise e1 = new WorkoutExercise("Leg press", w1, new ArrayList<WorkoutExerciseSet>());
 
-        e1.addExerciseSets(new WorkoutExerciseSet(12, 12));
-        e1.addExerciseSets(new WorkoutExerciseSet(12, 12));
-        e1.addExerciseSets(new WorkoutExerciseSet(12, 12));
+        e1.addWorkoutExerciseSets(new WorkoutExerciseSet(12, 12));
+        e1.addWorkoutExerciseSets(new WorkoutExerciseSet(12, 12));
+        e1.addWorkoutExerciseSets(new WorkoutExerciseSet(12, 12));
         mockdata.add(e1);
         mockdata.add(new WorkoutExercise("Bench press", w1, new ArrayList<WorkoutExerciseSet>()));
         mockdata.add(new WorkoutExercise("Pullup", w1, new ArrayList<WorkoutExerciseSet>()));

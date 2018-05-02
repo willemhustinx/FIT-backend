@@ -31,33 +31,8 @@ public class WorkoutExercise extends HasGeneratedId {
         this.workoutExerciseSets = workoutExerciseSets;
     }
 
-    public List<WorkoutExerciseSet> getExerciseSets() {
-        return workoutExerciseSets;
-    }
-
-    public void setExerciseSets(List<WorkoutExerciseSet> exerciseSets) {
-        this.workoutExerciseSets = exerciseSets;
-    }
-
-    @Override
-    public String toString() {
-        return "WorkoutExercise{" +
-                "name='" + name + '\'' +
-                ", workout=" + workout +
-                ", workoutExerciseSets=" + workoutExerciseSets +
-                '}';
-    }
-
-    public void addExerciseSets(WorkoutExerciseSet exerciseSet) {
-        this.workoutExerciseSets.add(exerciseSet);
-    }
-
-    public Workout getWorkout() {
-        return workout;
-    }
-
-    public void setWorkout(Workout workout) {
-        this.workout = workout;
+    public void addWorkoutExerciseSets(WorkoutExerciseSet workoutExerciseSet) {
+        this.workoutExerciseSets.add(workoutExerciseSet);
     }
 
     public String getName() {
@@ -68,5 +43,28 @@ public class WorkoutExercise extends HasGeneratedId {
         this.name = name;
     }
 
+    public Workout getWorkout() {
+        return workout;
+    }
 
+    public void setWorkout(Workout workout) {
+        this.workout = workout;
+    }
+
+    public List<WorkoutExerciseSet> getWorkoutExerciseSets() {
+        return workoutExerciseSets;
+    }
+
+    public void setWorkoutExerciseSets(List<WorkoutExerciseSet> workoutExerciseSets) {
+        this.workoutExerciseSets = workoutExerciseSets;
+    }
+
+    @Override
+    public String toString() {
+        return "WorkoutExercise{" +
+                "name='" + name + '\'' +
+                ", workout=" + workout +
+                ", workoutExerciseSets=" + workoutExerciseSets +
+                '}';
+    }
 }

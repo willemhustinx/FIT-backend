@@ -36,7 +36,7 @@ public class WorkoutExerciseSet extends HasGeneratedId {
 
     @Override
     public String toString() {
-        return "ExerciseSet{" +
+        return "WorkoutExerciseSet{" +
                 "amount=" + amount +
                 ", weight=" + weight +
                 '}';
